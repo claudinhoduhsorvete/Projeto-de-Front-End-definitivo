@@ -1,0 +1,210 @@
+.cor{
+    background-color: black;
+    color: #DAA520;
+    font-family: Stencil Std, sans-serif;
+}
+.fundo{
+    background-color: black;
+}
+a {
+    font-family: Stencil Std, sans-serif;
+    font-size: 15px;
+    color: #DAA520;
+    text-decoration: none;
+    gap: 5px;
+    width: 15px;
+
+}
+
+a:hover{
+    font-family: Stencil Std, sans-serif;
+    font-size: 16px;
+    color: crimson;
+    text-decoration: none;
+}
+
+h3 {
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    color: gold;
+
+}
+
+table {
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    background: white;
+    color: black;
+
+}
+.pedido {
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}    
+
+.pedido:hover {
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    color: green ;
+    text-decoration: none;
+}    
+
+marquee{
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    color: gold;
+    font-size: 16px;
+
+}
+
+
+hr{
+
+    font-family: Humnst777 BlkCn BT, sans-serif;
+    color: #00CDFF;
+
+}
+.main-contact {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 20px;
+   
+
+}
+
+.form-contact {
+    margin: 40px 0;
+ }
+
+.entry-label {
+    display: block;
+    margin: 8px auto;
+    width: 50%;
+}
+
+.entry, .form-contact textarea {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 4px 9px;
+    font-size: 18px;
+    width: 50%;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+}
+
+#checkbox, .div-entry {
+    margin: 30px auto;
+}   
+#dark-mode-input{
+    display:none;
+}
+#dark-mode-input:checked ~ .page{
+    background: #000;
+    color: #fff;
+}
+/*butãozinho*/
+.dark-mode-toggler{
+    position:absolute;
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border: 2px solid #bbb;
+    border-radius: 50px;
+    top: 10px;
+    right:10px;
+    transition: all 300ms ease-in-out;
+}
+.dark-mode-toggler div{
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 300ms ease-in-out;
+}
+#dark-mode-input:checked ~ .dark-mode-toggler{
+    background: black;
+}
+#dark-mode-input:checked ~ .dark-mode-toggler div{
+background: #ccc;
+left: 21px;
+}
+html, body{
+    margin: 0;
+    min-height: 300px;
+  }
+  
+  body{
+    text-align: center;
+  }
+  
+  /* A pseudo-classe nth-child seleciona elementos dentre uma árvore de elementos 
+  se referindo a posição específica de cada um. Você pode por exemplo selecionar os elementos ímpares ou pares*/
+  .slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+  .slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+  .slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
+  .slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
+  
+  .slide-show{
+    overflow: hidden;
+  }
+  
+  .slides-list{
+    --selected-item: 0;
+    --total-items: 4;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+    left: calc(var(--selected-item) * -100%);
+    width: calc(var(--total-items) * 100%);
+    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  
+  .slide{
+    width: 100%;
+  }
+  
+  #menu-h{
+      background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding:0;
+    cursor: pointer;
+}
+#menu-h ul:hover{
+    color: aqua;
+}
+#menu-h ul li{
+    display:inline;
+}
+#menu-h ul li a {
+    color: #fff;
+    padding:20px;
+    display: inline-block;
+    text-decoration:none;
+    transition: background.4s;
+}
+#menu-h ul li:last-child a{
+    float:center;
+    background-color: rgb(24, 139, 233);
+    
+}
+h1{
+    color: gold;
+}
+

@@ -1,0 +1,19 @@
+.fundo{
+    background-color: black;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: gold;
+}
+.imagem{
+    align-items: center;
+    border-radius: 50%;
+}
+body{
+    align-items: center;
+    text-align: center;
+}
+.form{
+    color: gold;
+}
